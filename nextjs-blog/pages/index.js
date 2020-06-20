@@ -1,18 +1,19 @@
 import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
 import Link from 'next/link'
-
 
 export default function Home() {
   return (
+    <Layout home>
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>{ siteTitle }</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Hi, My name is <a href="https://derrikxavier.com"> Derrik-Xavier Campbell!</a>
+          Hi, My name is <a href="https://derrikxavier.com"> Derrik-Xavier Campbell!<br></br></a>
           Read <Link href="/posts/first-post"><a>this page!</a></Link>
         </h1>
 
@@ -58,7 +59,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
 
-          Derrik-Xavier Campbell 2020. All Rights Reserved.
+          Derrik-Xavier Campbell © 2020. All Rights Reserved.
 
         </a>
       </footer>
@@ -209,5 +210,7 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </Layout>
   )
 }
+
