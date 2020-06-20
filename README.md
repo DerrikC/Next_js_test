@@ -27,6 +27,8 @@ $ cd /documents
 $ git clone https://github.com/DerrikC/Next_js_test.git
 
 ```
+### Deployment
+- [Vercel](https://vercel.com/) Jamstack deployment platform
 
 ## Authors
 
